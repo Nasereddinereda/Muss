@@ -1,0 +1,117 @@
+@media only screen and (min-width: 1400px) {
+.title-nav{
+    animation: title-nav 0.7s forwards;
+}
+
+@keyframes title-nav {
+  from {
+    font-size: 18px;
+    }
+  to {
+      font-size: 20px;
+    }
+}
+
+.title-nav-sm{
+    animation: title-nav-sm 0.7s forwards;
+}
+
+@keyframes title-nav-sm {
+  from {
+    font-size: 20px;
+    }
+  to {
+      font-size: 18px;
+    }
+}
+
+
+
+.css-nav-body,
+.css-nav-body-left{
+    top:42px;
+}
+
+
+.css-nav-body svg {
+    font-size: 28px;
+}
+
+.css-one-child p {
+    text-align: center;
+    transition: all .2s ease;
+    font-size: 17px;
+}
+
+
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+.title-nav{
+    animation: title-nav 0.7s forwards;
+    margin-top: 2px;
+}
+
+@keyframes title-nav {
+  from {
+    font-size: 13px;
+    }
+  to {
+      font-size: 16px;
+    }
+}
+
+.title-nav-sm{
+    margin-top: 2px;
+    animation: title-nav-sm 0.7s forwards;
+}
+
+@keyframes title-nav-sm {
+  from {
+    font-size: 16px;
+    }
+  to {
+      font-size: 13px;
+    }
+}
+
+.css-one-child p{
+  display: none;
+}
+}
+
+
+
+
+@media only screen and (max-width: 340px) {
+.title-nav{
+    animation: title-nav 0.7s forwards;
+    margin-top: 2px;
+}
+
+@keyframes title-nav {
+  from {
+    font-size: 13px;
+    }
+  to {
+      font-size: 14px;
+    }
+}
+
+.title-nav-sm{
+    margin-top: 2px;
+    animation: title-nav-sm 0.7s forwards;
+}
+
+@keyframes title-nav-sm {
+  from {
+    font-size: 14px;
+    }
+  to {
+      font-size: 13px;
+    }
+}
+}

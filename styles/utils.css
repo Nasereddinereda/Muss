@@ -12,6 +12,10 @@
     justify-content: space-between !important;
 }
 
+.justify-center{
+    justify-content: center !important;
+}
+
 /* Size  */
 
 .w-95{
@@ -100,6 +104,14 @@
     color: #A2A2A2;
 }
 
+.css-fill-grey svg{
+    fill: #A2A2A2;
+}
+
+.css-cl-gray{
+    color: #636363;
+}
+
 
 
 /* Button  */
@@ -159,4 +171,22 @@
 .outile-none{
     outline: none !important;
     box-shadow: none !important;
+}
+
+.opc-0 {
+    animation: opa-menu 0.7s forwards;
+}
+
+
+@keyframes opa-menu {
+  from {
+    opacity: 1;
+    }
+  to {
+      opacity: 0;
+    }
+}
+
+.d-none {
+    display: none;
 }
