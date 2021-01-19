@@ -17,7 +17,8 @@ import {
     DrawerContent,
     DrawerCloseButton,
     useDisclosure,
-    Button
+    Button,
+    Box
 } from "@chakra-ui/react"
 
 
@@ -243,11 +244,6 @@ const Home = () => {
 
                 <div className={scrollPos > 50 ? "css-nav-head css-nav-head-sm flex justify-between" : "css-nav-head flex justify-between"} >
 
-                    <h1>  </h1>
-                    <h1 className={scrollPos > 50 ? "title-nav-sm" : "title-nav"}>
-                        <span className="css-cl-grey"> Personal Well Being: </span>
-                        <span className={isOpen ? "css-cl-gray" : ""}> Are you happy? </span>
-                    </h1>
 
                     {/* Hamburg */}
                     <div className={isOpen ? "opc-0" : "col"} onClick={onOpen}>
@@ -257,6 +253,16 @@ const Home = () => {
                             <div className={scrollPos > 50 ? "bar arrow-bottom" : "bar bar-lg arrow-bottom-lg"}></div>
                         </div>
                     </div>
+
+                    {/* Midlle */}
+                    <h1 className={scrollPos > 50 ? "title-nav-sm" : "title-nav"}>
+                        <span className="css-cl-grey"> Personal Well Being: </span>
+                        <span className={isOpen ? "css-cl-gray" : ""}> Are you happy? </span>
+                    </h1>
+
+                    <h1>  </h1>
+
+
 
                 </div>
 
@@ -327,6 +333,37 @@ const Home = () => {
             </div >
 
             <div style={{ width: "100%", height: "200vh" }}> </div>
+
+
+
+            {/* Footer */}
+
+
+            <Box
+                w="100%"
+                h="auto"
+                // bgGradient="linear(rgb(42,45,53) 25%, rgb(40,38,38) 100%, rgb(35,35,35) 50%)"
+
+                bgGradient={[
+                    "linear(to-tr, rgb(42,45,53) , rgb(40,38,38))",
+                    "linear(to-t, rgb(40,38,38), rgb(42,45,53) )",
+                    "linear(to-b, rgb(30,30,30), rgb(50,50,50)",
+                ]}
+            >
+                <div>
+                    <div className="css-foot-head flex justify-between">
+                        <Link href="#">  Overview  </Link>
+                        <Link href="#">  Timetrend </Link>
+                        <Link href="#">  Regression  </Link>
+                        <Link href="#">  Interaction  </Link>
+                        <Link href="#">  Key Predictors  </Link>
+                    </div>
+                    <div className="css-foot-body">
+                        <p> <span className="css-cl-blue" > &copy; Copyright 2021  </span> | All Rights Reserved </p>
+                    </div>
+                </div>
+            </Box>
+
 
 
             {/* Menu  */}

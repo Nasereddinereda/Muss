@@ -44,12 +44,47 @@
 }
 
 
+
+.css-foot-body{
+    font-size: 19px;
 }
 
 
+.css-foot-head{
+  font-size: 17px;
+}
 
+
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 700px) {
+
+  .css-foot-body{
+    margin-left: 10%;
+}
+
+
+.css-foot-head{
+  width: 80%;
+  margin-left: 10%;
+}
+
+}
 
 @media only screen and (max-width: 600px) {
+
+.css-foot-head{
+  display: none;
+}
+
+.css-foot-body{
+  margin-left: 0%;
+  padding: 1.5rem;
+  font-size: 14px;
+  text-align: center;
+}
+
 .title-nav{
     animation: title-nav 0.7s forwards;
     margin-top: 2px;

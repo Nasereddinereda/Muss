@@ -464,3 +464,22 @@ font-weight: 500 ;
    width: 25px;
  }
 
+.css-foot-head{
+  width: 60%;
+  margin-left: 15%;
+  color: #f4f4ef;
+  padding: 2.5rem 0 2rem 0;
+  font-size: 14px;
+}
+
+.css-foot-head a:hover{
+  color: #a01d26;
+}
+
+
+.css-foot-body{
+  margin-left: 15%;
+  color: #919191;
+  padding-bottom: 1.5rem;
+  font-size: 15px;
+}
